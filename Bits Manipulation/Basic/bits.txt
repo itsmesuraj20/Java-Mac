@@ -1,3 +1,6 @@
-There are mainly types of Bits
+There are mainly types of Bits:
 
+AND
+OR
+XOR
 
