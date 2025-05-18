@@ -61,4 +61,29 @@ public class recursion {
         }
     }
     
+    // Recursive method to calculate combinations
+    public static void combinations(String str, String ans, int index) {
+        if (index == str.length()) {
+            System.out.println(ans); // Base case
+            return;
+        }
+        // Include the current character
+        combinations(str, ans + str.charAt(index), index + 1);
+        // Exclude the current character
+        combinations(str, ans, index + 1); // Recursive case
+    }
+
+    // Recursive method to calculate subsets
+    public static void subsets(String str, String ans) {
+        if (str.length() == 0) {
+            System.out.println(ans); // Base case
+            return;
+        }
+        // Include the current character
+        subsets(str.substring(1), ans + str.charAt(0)); // Recursive case
+        // Exclude the current character
+        subsets(str.substring(1), ans); // Recursive case
+    }
+
+
 }
