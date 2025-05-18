@@ -44,5 +44,21 @@ public class recursion {
         }
         return gcd(b, a % b); // Recursive case
     }
+    // Recursive method to calculate LCM
+    public static int lcm(int a, int b) {
+        return (a * b) / gcd(a, b); // Using GCD to calculate LCM
+    }
+    // Recursive method to calculate permutations
+    public static void permutations(String str, String ans) {
+        if (str.length() == 0) {
+            System.out.println(ans); // Base case
+            return;
+        }
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            String ros = str.substring(0, i) + str.substring(i + 1); // Remaining string
+            permutations(ros, ans + ch); // Recursive case
+        }
+    }
     
 }
