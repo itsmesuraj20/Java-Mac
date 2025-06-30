@@ -5,6 +5,7 @@ public class recursion {
         int n = 5; // Example input
         System.out.println("Factorial of " + n + " is: " + factorial(n));
     }
+    
 
     // Recursive method to calculate factorial
     public static int factorial(int n) {
