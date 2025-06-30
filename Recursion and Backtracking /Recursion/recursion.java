@@ -6,6 +6,7 @@ public class recursion {
         System.out.println("Factorial of " + n + " is: " + factorial(n));
     }
 
+    
     // Recursive method to calculate factorial
     public static int factorial(int n) {
         if (n == 0 || n == 1) {
