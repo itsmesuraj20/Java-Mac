@@ -13,6 +13,7 @@ public class recursion {
         }
         return n * factorial(n - 1); // Recursive case
     }
+    
     // Recursive method to calculate Fibonacci
     public static int fibonacci(int n) {
         if (n == 0) {
