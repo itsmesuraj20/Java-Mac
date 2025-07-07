@@ -6,21 +6,30 @@ package Array.question;
 
 public class findtheunique {
     public static void main(String[] args) {
-        int arr[] = {2,3,1,6,2,3,6};
-        
-        for(int i = 0;i<arr.length;i++){
-            int count = 0;
-            for(int j = 0;j<arr.length;j++){
-                if(arr[j] == arr[i])
-                {count++;
-        }
-    }
+     int arr[] = {};
+     
 
-            if(count == 1)
-            {System.out.println("Unique Element : " + arr[i]);
-            break;
-}
+     if(arr.length == 0){
+        System.out.println("Array Empty cant proceed");
+        return; 
+     }
+
+     boolean found = false;
+     for(int i = 0;i<arr.length;i++){
+        
+        int c = 0 ;
+        for(int j = 0;j<arr.length;j++){
+            if(arr[i] == arr[j]){
+                c++;
+            }
         }
+        if(c == 1){
+            System.out.println("Found at : " + arr[i]);
+            found = true;
+        }
+     }
+
+     if(!found)
+     System.out.println("No unique element found");
     }
-    
 }
