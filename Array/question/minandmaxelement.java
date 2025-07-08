@@ -11,7 +11,6 @@ public class minandmaxelement {
             min = Math.min(min,arr[i]);
             max = Math.max(max,arr[i]);
         }
-
         System.out.println("Maximum Value : " + max);
         System.out.println("Min : " + min);
     }

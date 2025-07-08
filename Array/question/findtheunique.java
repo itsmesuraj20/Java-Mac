@@ -8,12 +8,13 @@ public class findtheunique {
     public static void main(String[] args) {
      int arr[] = {};
      
-
+     //Edge Case - what if the array is empty
      if(arr.length == 0){
         System.out.println("Array Empty cant proceed");
         return; 
      }
 
+    //Count the number of occurrence
      boolean found = false;
      for(int i = 0;i<arr.length;i++){
         
@@ -29,6 +30,7 @@ public class findtheunique {
         }
      }
 
+    //If Not found 
      if(!found)
      System.out.println("No unique element found");
     }

@@ -16,7 +16,7 @@ public class linearsearch {
         System.out.println("Enter the element that need to find");
         int key = sc.nextInt();
 
-        //Linear Search 
+        //Linear Search Logic
         boolean check = false;
         int index = -1;
         for(int i = 0;i<arr.length;i++){
