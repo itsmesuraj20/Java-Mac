@@ -1,0 +1,9 @@
+There are mainly types of Bits:
+
+Bitwise AND (&)
+Bitwise OR (OR)
+Bitwise XOR (XOR)
+Bitwise left Shift (<<)/p>
+Bitwise right Shift (>>)
+Bitwise not (~)
+

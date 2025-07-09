@@ -10,8 +10,8 @@ public class MethodInJava {
 //    list.add(20);
 //    list.add(30);
 
-    List<Integer> list  = Arrays.asList(10,20,30);
-    for(int i = 0;i<list.size();i++){
-        System.out.println();
-    }
-}
+//    List<Integer> list  = Arrays.asList(10,20,30);
+//    for(int i = 0;i<list.size();i++){
+//        System.out.println();
+//    }
+//}
