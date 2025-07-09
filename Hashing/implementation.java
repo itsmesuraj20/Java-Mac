@@ -34,8 +34,13 @@ public class implementation {
 
         Set<Map.Entry<Integer, String>> keyPairs = hashmap.entrySet(); // save the data in the order
 
-        for (Entry<Integer, String> i : keyPairs) {
-            System.out.println(i.getKey() + " : " + i.getValue());
+        // for (Entry<Integer, String> i : keyPairs) {
+        //     System.out.println(i.getKey() + " : " + i.getValue());
+        // }
+
+        for(Entry<Integer, String> i : keyPairs){
+            i.setValue(i.getValue().toUpperCase());
         }
+        System.out.println(hashmap);
     }
 }
