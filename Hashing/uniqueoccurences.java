@@ -24,6 +24,7 @@ public class uniqueoccurences {
 
         HashSet<Integer> freqSet = new HashSet<>();
 
+        
         for (Entry<Integer, Integer> i : hash.entrySet()) {
             int freq = i.getValue();
             if (freqSet.contains(freq)) {
