@@ -24,15 +24,19 @@ public class uniqueoccurences {
 
         HashSet<Integer> freqSet = new HashSet<>();
 
-        for (Entry<Integer, Integer> i : hash.entrySet()) {
+        //Try new Method
+        for (int i : freqSet) {
             int freq = i.getValue();
-            if (freqSet.contains(freq)) {
-                System.out.println(false);
-                return;
-            } else {
-                freqSet.add(freq);
-            }
         }
+        // for (Entry<Integer, Integer> i : hash.entrySet()) {
+        //     int freq = i.getValue();
+        //     if (freqSet.contains(freq)) {
+        //         System.out.println(false);
+        //         return;
+        //     } else {
+        //         freqSet.add(freq);
+        //     }
+        // }
         System.out.println(true);
     }
 }
