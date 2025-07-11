@@ -24,7 +24,7 @@ public class uniqueoccurences {
 
         HashSet<Integer> freqSet = new HashSet<>();
 
-        //Try new Method
+        //Try new Method for this question
         for (int i : freqSet) {
             int freq = i.getValue();
         }
