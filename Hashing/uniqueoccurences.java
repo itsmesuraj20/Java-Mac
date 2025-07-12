@@ -26,7 +26,14 @@ public class uniqueoccurences {
 
         //Try new Method for this question
         for (int i : freqSet) {
-            int freq = i.getValue();
+             int freq = i.getValue();
+            if(freqSet.contains(freq)){
+                System.out.println(false);
+                return;
+            }
+            else{
+                freqSet.add(freq);
+            }
         }
         // for (Entry<Integer, Integer> i : hash.entrySet()) {
         //     int freq = i.getValue();
