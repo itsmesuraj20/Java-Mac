@@ -35,6 +35,7 @@ public class uniqueoccurences {
                 freqSet.add(freq);
             }
         }
+        
         // for (Entry<Integer, Integer> i : hash.entrySet()) {
         //     int freq = i.getValue();
         //     if (freqSet.contains(freq)) {
@@ -44,7 +45,7 @@ public class uniqueoccurences {
         //         freqSet.add(freq);
         //     }
         // }
-        
+
         System.out.println(true);
     }
 }
