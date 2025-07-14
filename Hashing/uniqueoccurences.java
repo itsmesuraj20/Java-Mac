@@ -2,15 +2,12 @@ package Hashing;
 
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 
-import Array.question.linearsearch;
 
 public class uniqueoccurences {
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4 };
+        int[] arr = { 1, 2, 2, 3, 3, 3, 4, 4, 4, 4 };
         int n = arr.length;
 
         HashMap<Integer, Integer> hash = new HashMap<>();
@@ -23,28 +20,16 @@ public class uniqueoccurences {
         }
 
         HashSet<Integer> freqSet = new HashSet<>();
-
-        //Try new Method for this question
-        for (int i : freqSet) {
-             int freq = i.getValue();
-            if(freqSet.contains(freq)){
+        
+        for (Entry<Integer, Integer> i : hash.entrySet()) {
+            int freq = i.getValue();
+            if (freqSet.contains(freq)) {
                 System.out.println(false);
                 return;
-            }
-            else{
+            } else {
                 freqSet.add(freq);
             }
         }
-        
-        // for (Entry<Integer, Integer> i : hash.entrySet()) {
-        //     int freq = i.getValue();
-        //     if (freqSet.contains(freq)) {
-        //         System.out.println(false);
-        //         return;
-        //     } else {
-        //         freqSet.add(freq);
-        //     }
-        // }
 
         System.out.println(true);
     }
