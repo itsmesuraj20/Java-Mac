@@ -10,6 +10,7 @@ public class uniqueoccurences {
         int[] arr = { 1, 2, 2, 3, 3, 3, 4, 4, 4, 4 };
         int n = arr.length;
 
+        //Count the number of occurence
         HashMap<Integer, Integer> hash = new HashMap<>();
         for (int j = 0; j < arr.length; j++) {
             if (hash.containsKey(arr[j])) {
