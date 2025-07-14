@@ -1,4 +1,3 @@
-package Array.question;
 
 //Coding Ninja Question;
 //Find the Unique
