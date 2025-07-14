@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-
-Hold pe rakho isko
-
 public class uniqueoccurence {
     public static void main(String[] args) {
 
