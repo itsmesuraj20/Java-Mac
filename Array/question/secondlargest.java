@@ -48,28 +48,34 @@ public class secondlargest {
         }
 
         int secondlargestSofar = Integer.MIN_VALUE;
+        boolean check = false;
 
-        for (int j = 1; j < arr.length; j++) {
+        for (int j = 0; j < arr.length; j++) {
             if (arr[j] != largestSofar && arr[j] > secondlargestSofar) {
                 secondlargestSofar = arr[j];
+                check = true;
             }
         }
 
-        return secondlargestSofar;
+        return check ? secondlargestSofar : -1 ;
     }
 
     public static int secondlargestOptimal(int[] arr) {
-        int largest = arr[0];
+        int largest = Integer.MIN_VALUE;
         int secondlargest = Integer.MIN_VALUE;
 
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] > largest) {
                 // int arr[] = {-1,-2,0,1};
                 secondlargest = largest;
                 largest = arr[i];
+            }
 
+            else if (arr[i] < largest && arr[i] > secondlargest){
+                secondlargest = arr[i];
             }
         }
-        return secondlargest;
+
+        return secondlargest == Integer.MIN_VALUE ? -1 : secondlargest;
     }
 }
